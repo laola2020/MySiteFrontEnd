@@ -1,0 +1,40 @@
+/*
+esto es un comentario
+
+*/
+
+*{background-color: white;
+    color:black;
+}
+header{
+    color:black;
+    font-size:1.5vw;
+    font-family: 'Nunito', sans-serif;
+}
+main{
+    background-color:white (42, 22, 97);
+    color:black;
+    font: size 15px;;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer{
+    background-color:rgb(42, 22, 97);
+    color:white;
+    font-size:1.5vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+td {padding-top: 15px;
+    margin-bottom: 20px;
+    border-style: dotted;
+    }
+
+ /*   margin: 3em;
+    border-style: double; */
+
+/*provisoriamente le ponemos a IMAGENES un borde punteado para delimitarlas claramente durante el rpocesos de diseño
+img{border-style: dotted;}*/
+
+/* a continuación tenemos un selector super es[pecifico sin ir a class ni Id: lo encontré con F12 haciendo click sobre el elemto, copiar / copiar selector (ojo que hay que mantener la ruta como ruta absoluta)
+body > main > table:nth-child(6) > tbody > tr > td:nth-child(2) > img
+{border-style: double;} */

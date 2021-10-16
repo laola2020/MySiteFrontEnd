@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="Assets/ico/Mari_euskal_jainkosa.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/56f36b595b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Laura Olalde</a>
+            <a href="Acerca de.html">Acerca de</a>
+            <a href="Obras.html">Obras</a>
+            <a href="Noticias.html">Noticias</a>
+            <a href="Taller.html">Taller</a>
+            <a href="Otros Proyectos.html">Proyectos</a>
+            <a href="Archivos.html">Archivos</a>
+            <a href="Contacto.html">Contacto</a>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </nav>
+    </header>
+    <main>
+
+    <form action="https://www.w3schools.com/action_page.php" method="POST" target="__blanck">
+        <fieldset>
+            <legend><b>REGISTRO:</b></legend><br>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombreID" name="nombre" required><br><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellidoID" name="apellido" required><br><br>
+            <label for="usuario">Nombre de usuario(*obligatorio):</label><br>
+            <input type="text" id="usuarioID" name="usuario" maxlength="12" required><br><br>
+            <label for="email">Correo electrónico (*obligatorio):</label><br>
+            <input type="email" id="emailID" name="email" required><br><br>
+            <label for="password">Contraseña(*obligatorio):</label><br>
+            <input type="password" id="passwordID" name="password" required><br><br>
+            <!--Vamos a validar con JS mientras el usuario está todavia escribiendo para experiencia más dinámica de ususario mientras escribe-->
+            <label for="rpassword">Repetir contraseña (*obligatorio):</label><br>
+            <input type="password" id="rpasswordID" name="rpassword" required><br><br>
+
+   
+        <br><br>
+      
+            <legend><b>ACERCA DE TÍ:</b></legend><br>
+            <label for="areas"><b>Áreas de interés:</b></label><br>
+            <input type="checkbox" name="opcion" value="1">Artes Plásticas<br>
+            <input type="checkbox" name="opcion" value="2">Arte Público y muralismo<br>
+            <input type="checkbox" name="opcion" value="3">Arte Sonoro<br>
+            <input type="checkbox" name="opcion" value="4">Artes Visuales<br>
+            <input type="checkbox" name="opcion" value="5">Bioarte<br>
+            <input type="checkbox" name="opcion" value="6">Biofabricación<br>
+            <input type="checkbox" name="opcion" value="7">Ciencia ciudadana<br>
+            <input type="checkbox" name="opcion" value="8">Ciencia ficción<br>
+            <input type="checkbox" name="opcion" value="9">Coproducción Sciart<br>
+            <input type="checkbox" name="opcion" value="10">Diseño de materiales<br>
+            <input type="checkbox" name="opcion" value="11">Filosofía<br>
+            <input type="checkbox" name="opcion" value="12">Narrativas especulativas<br>
+            <input type="checkbox" name="opcion" value="13">Narrativas visuales & storyboards<br>
+            <input type="checkbox" name="opcion" value="14">Tecnologías abiertas<br>
+            <input type="checkbox" name="opcion" value="15">Tecnologías aplicadas al Arte<br>
+            <input type="checkbox" name="opcion" value="16">Tecnologías de la información (TICs)<br><br>
+
+
+            <label for="Bio"><b>BIO (*máximo 500 caracteres)</b><br>
+                <textarea name="bio"rows="20" cols="60" maxlength="500">Cuéntanos acerca de tí</textarea><br><br>
+            
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="RESET">
+
+                <br><br>
+           
+
+        </fieldset>
+
+    </form>
+    <a href="Taller.html">Volver a Taller</a><br><br>
+</main>
+<footer>
+    Copyright 2021 Contact
+</footer>
+</body>
+
+</html>
