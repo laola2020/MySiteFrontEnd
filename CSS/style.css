@@ -3,10 +3,16 @@ esto es un comentario
 
 
 
-*{background-color: white;
+*/ 
+*{
+    background-color:white ;
     color:black;
-}*/
+    margin-top: 0px;
+    margin-left: 0px;
+}
 header{
+    position: sticky;
+   top:0%;
     color:black;
     font-size:1.5vw;
     font-family: 'Nunito', sans-serif;
@@ -18,6 +24,8 @@ main{
     font-family: 'Nunito Sans', sans-serif;
 }
 footer{
+    position: relative;
+    bottom:0%;
     background-color:rgb(42, 22, 97);
     color:white;
     font-size:1.5vw;
@@ -29,8 +37,7 @@ td {padding-top: 15px;
     border-style: dotted;
     }
 
- /*   margin: 3em;
-    border-style: double; */
+    
 
 /*provisoriamente le ponemos a IMAGENES un borde punteado para delimitarlas claramente durante el rpocesos de diseño
 img{border-style: dotted;}*/
