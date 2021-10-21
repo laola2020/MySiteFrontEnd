@@ -10,6 +10,10 @@ esto es un comentario
     margin-top: 0px;
     margin-left: 0px;
 }
+a:active {
+    color:slateblue;
+    }
+
 header{
     position: sticky;
    top:0%;
@@ -17,12 +21,18 @@ header{
     font-size:1.5vw;
     font-family: 'Nunito', sans-serif;
 }
-main{
+main
+{
     background-color:white (42, 22, 97);
     color:black;
     font: size 15px;;
     font-family: 'Nunito Sans', sans-serif;
+    
 }
+input[required]{
+    background-color: rgb(219, 219, 219);
+}
+
 footer{
     position: relative;
     bottom:0%;
@@ -31,7 +41,7 @@ footer{
     font-size:1.5vw;
     font-family: 'Nunito', sans-serif;
 }
-table {position:}
+table {position: relative;}
 td {padding-top: 15px;
     margin-bottom: 20px;
     border-style: dotted;
