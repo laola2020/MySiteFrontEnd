@@ -1,0 +1,34 @@
+.container{
+    background:grey;
+    display:flex;
+    /*width: 50%;*/
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.item {
+    border-width: 2px;
+    border-color: hotpink;
+}
+.grid-container{
+    display:grid;
+}
+/**********************************************************/
+/*Defino los items de la grilla     */
+/**********************************************************/
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+
+.footer{
+    grid-area: footer;
+}
+
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'main main main main'
+                         'footer footer';
+}
