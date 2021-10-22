@@ -4,6 +4,12 @@ esto es un comentario
 
 
 */ 
+/*
+*
+{
+    box-sizing: border-box;
+  }
+*/
 *{
     background-color:white ;
     color:black;
@@ -63,11 +69,13 @@ td {padding-top: 15px;
     to {opacity:0.3}*/
 }
    td img:hover
-{opacity: 0.2;
-transition-duration: .5s;
+{
+    opacity: 0.2;
+transition-duration: 1s;
 transition-timing-function: ease-out;
+}
 
-/*background:rgb(69, 56, 151)*/ ;}
+/*background:rgb(69, 56, 151)*/ 
    
 
 /*provisoriamente le ponemos a IMAGENES un borde punteado para delimitarlas claramente durante el rpocesos de diseño
