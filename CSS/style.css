@@ -1,15 +1,7 @@
 /*
 esto es un comentario
-
-
-
 */ 
-/*
-*
-{
-    box-sizing: border-box;
-  }
-*/
+
 *{
     background-color:white ;
     color:black;
@@ -17,22 +9,29 @@ esto es un comentario
     margin-left: 0px;
 }
 
-/* a:active {
+/*
+@import url(index.css);
+
+
+a:active {
     color:slateblue;
-    }*/
-
-    a:hover {
-        color:slateblue;  
     }
+*/
+/* */
 
-header{
+.header{
     position: sticky;
     top:0%;
     color:black;
-    font-size:1.5vw;
+    font-size: 1.2vw;
     font-family: 'Nunito', sans-serif;
 }
-main
+a:hover {
+    color:slateblue;  
+}
+
+
+.main
 {
     background-color:white (42, 22, 97);
     color:black;
@@ -44,7 +43,7 @@ input[required]{
     background-color: rgb(219, 219, 219);
 }
 
-footer{
+.footer{
     position: relative;
     bottom:0%;
     background-color:rgb(42, 22, 97);
@@ -52,12 +51,13 @@ footer{
     font-size:15px;
     font-family: 'Nunito', sans-serif;
 }
-table {position: relative;}
+/*table {position: relative;}
 td {padding-top: 15px;
     margin-bottom: 20px;
     border-style: dotted;
     
-    }
+    }*/
+div { border-style: dotted;}
     img {opacity: 1;
 
     /*animation-name: changeOpacity;
@@ -68,13 +68,17 @@ td {padding-top: 15px;
     from {opacity:1}
     to {opacity:0.3}*/
 }
-   td img:hover
+.item {
+    border-width: 2px;
+    border-color: hotpink;}
+
+.item img:hover
 {
     opacity: 0.2;
 transition-duration: 1s;
 transition-timing-function: ease-out;
 }
-header {
+/*header {
     display: none;
     flex-direction: row;
     }
