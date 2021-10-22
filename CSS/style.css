@@ -10,8 +10,13 @@ esto es un comentario
     margin-top: 0px;
     margin-left: 0px;
 }
-a:active {
+
+/* a:active {
     color:slateblue;
+    }*/
+
+    a:hover {
+        color:slateblue;  
     }
 
 header{
@@ -45,9 +50,25 @@ table {position: relative;}
 td {padding-top: 15px;
     margin-bottom: 20px;
     border-style: dotted;
-    }
-
     
+    }
+    img {opacity: 1;
+
+    /*animation-name: changeOpacity;
+    animation-duration: 2s;
+}
+
+    @keyframes changeOpacity{
+    from {opacity:1}
+    to {opacity:0.3}*/
+}
+   td img:hover
+{opacity: 0.2;
+transition-duration: .5s;
+transition-timing-function: ease-out;
+
+/*background:rgb(69, 56, 151)*/ ;}
+   
 
 /*provisoriamente le ponemos a IMAGENES un borde punteado para delimitarlas claramente durante el rpocesos de diseño
 img{border-style: dotted;}*/
