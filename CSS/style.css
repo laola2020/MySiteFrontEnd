@@ -10,10 +10,13 @@ esto es un comentario
     margin-top: 0px;
     margin-left: 0px;
 }
-@import url(index.css);
+
 /* */
-
-
+@import url(index.css);
+.item {
+    border-width: 2px;
+    border-color: hotpink;
+    display: inline;}
 
 .header{
     position: sticky;
@@ -22,6 +25,7 @@ esto es un comentario
     color:black;
     font-size:18px;
     font-family: 'Nunito', sans-serif;
+    
 }
 .menu{
     position: sticky;
@@ -52,7 +56,6 @@ input[required]{
     font-family: 'Nunito', sans-serif;
 }
 
-
     a:hover {
         color:slateblue; }
         a:active{
@@ -78,10 +81,7 @@ img {opacity: 1;
     to {opacity:0.3}*/
 
 
-.item {
-    border-width: 2px;
-    border-color: hotpink;
-    display: inline;}
+
 
 .item img:hover
 {
@@ -94,7 +94,7 @@ transition-timing-function: ease-out;
     display: none;
     flex-direction: row;
     }
-    
+    @import url(index.css);
     @media only screen and (min-width: 600px) {
         header{
             display: flex;
