@@ -10,15 +10,9 @@ esto es un comentario
     margin-left: 0px;
 }
 @import url(index.css);
-/*
-@import url(index.css);
 
-
-a:active {
-    color:slateblue;
-    }
-*/
 /* */
+
 
 .header{
     position: sticky;
@@ -26,9 +20,6 @@ a:active {
     color:black;
     font-size:18px;
     font-family: 'Nunito', sans-serif;
-}
-a:hover {
-    color:slateblue;  
 }
 
 
@@ -51,12 +42,20 @@ input[required]{
     font-size:15px;
     font-family: 'Nunito', sans-serif;
 }
+
+
+    a:hover {
+        color:slateblue; }
+        a:active{
+            background-color:slateblue; ;color:white;
+        }
 /*table {position: relative;}
 td {padding-top: 15px;
     margin-bottom: 20px;
     border-style: dotted;
     
     }*/
+
 div { border-style: dotted;}
     img {opacity: 1;
 
@@ -68,6 +67,7 @@ div { border-style: dotted;}
     from {opacity:1}
     to {opacity:0.3}*/
 }
+
 .item {
     border-width: 2px;
     border-color: hotpink;}
@@ -78,6 +78,8 @@ div { border-style: dotted;}
 transition-duration: 1s;
 transition-timing-function: ease-out;
 }
+p:first-child {opacity: 1;
+    transition-duration: 0s;}
 /*header {
     display: none;
     flex-direction: row;
