@@ -3,39 +3,35 @@
     flex-direction:row;
     flex-wrap: wrap;
 }
-.item {
-    border-width: 2px;
-    border-color: hotpink;
-}
+
 
 /**********************************************************/
 /*Defino los items de la grilla     */
 /**********************************************************/
-.header{
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
-
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.footer { grid-area: right; }
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'header''header'
-                          'main main main main'
-                          'main main'
-                          'main main main'
-                         'footer footer';
+    grid-template-areas:
+      'header header menu menu menu menu'
+       'main main main main main main'
+      'footer footer ';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
 }
 @media only screen and (max-width: 570px) {
     .grid-container {
         display: grid;
-        grid-template-areas: 'header''header'
-                             'menu main main main'
+        grid-template-areas: 'header header header header header header'
+                             'menu main main main main main'
               
                              'footer footer';
     }
+    img {width: 100%;}
 }
