@@ -1,6 +1,6 @@
  .container{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
 }
 .item {
@@ -33,9 +33,9 @@
 @media only screen and (max-width: 570px) {
     .grid-container {
         display: grid;
-        grid-template-areas: 'header'
-                             'menu'
-                             'content'
-                             'footer';
+        grid-template-areas: 'header''header'
+                             'menu main main main'
+              
+                             'footer footer';
     }
 }

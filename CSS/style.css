@@ -56,9 +56,11 @@ td {padding-top: 15px;
     
     }*/
 
-div { border-style: dotted;}
+div { border-style: dotted;
+    display: inline;
     img {opacity: 1;
-
+        }
+    }
     /*animation-name: changeOpacity;
     animation-duration: 2s;
 }
@@ -66,11 +68,13 @@ div { border-style: dotted;}
     @keyframes changeOpacity{
     from {opacity:1}
     to {opacity:0.3}*/
-}
+
 
 .item {
+   
     border-width: 2px;
-    border-color: hotpink;}
+    border-color: hotpink;
+    display: inline;}
 
 .item img:hover
 {
@@ -78,8 +82,7 @@ div { border-style: dotted;}
 transition-duration: 1s;
 transition-timing-function: ease-out;
 }
-p:first-child {opacity: 1;
-    transition-duration: 0s;}
+
 /*header {
     display: none;
     flex-direction: row;
