@@ -2,13 +2,14 @@
 esto es un comentario
 */ 
 
+
 *{
-    background-color:white ;
+    background-color:white;
     color:black;
     margin-top: 0px;
     margin-left: 0px;
 }
-
+@import url(index.css);
 /*
 @import url(index.css);
 
@@ -23,7 +24,7 @@ a:active {
     position: sticky;
     top:0%;
     color:black;
-    font-size: 1.2vw;
+    font-size:18px;
     font-family: 'Nunito', sans-serif;
 }
 a:hover {
@@ -32,10 +33,9 @@ a:hover {
 
 
 .main
-{
-    background-color:white (42, 22, 97);
+{   position:static;
     color:black;
-    font: size 15px;
+    font-size:  15px;
     font-family: 'Nunito Sans', sans-serif;
     
 }

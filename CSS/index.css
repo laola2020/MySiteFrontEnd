@@ -1,17 +1,13 @@
-.container{
-    background:grey;
+ .container{
     display:flex;
-    /*width: 50%;*/
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap: wrap;
 }
 .item {
     border-width: 2px;
     border-color: hotpink;
 }
-.grid-container{
-    display:grid;
-}
+
 /**********************************************************/
 /*Defino los items de la grilla     */
 /**********************************************************/
@@ -20,15 +16,26 @@
 }
 .main{
     grid-area: main;
-
+}
 .footer{
     grid-area: footer;
 }
 
-}
+
 .grid-container {
     display: grid;
-    grid-template-areas: 'header header'
-                         'main main main main'
+    grid-template-areas: 'header''header'
+                          'main main main main'
+                          'main main'
+                          'main main main'
                          'footer footer';
+}
+@media only screen and (max-width: 570px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header'
+                             'menu'
+                             'content'
+                             'footer';
+    }
 }
