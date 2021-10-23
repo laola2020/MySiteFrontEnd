@@ -2,8 +2,16 @@
 esto es un comentario
 */ 
 
+   
 
 
+
+* {
+    box-sizing: border-box;
+  }
+  @import url(index.css);
+  
+ 
 *{
     background-color:white;
     color:black;
@@ -11,16 +19,15 @@ esto es un comentario
     margin-left: 0px;
 }
 
+
 /* */
-@import url(index.css);
-.item {
-    border-width: 2px;
-    border-color: hotpink;
-    display: inline;}
+
+
 
 .header{
     position: sticky;
     border-style: dotted;
+    padding:15px;
     top:0%;
     color:black;
     font-size:18px;
@@ -55,6 +62,10 @@ input[required]{
     font-size:15px;
     font-family: 'Nunito', sans-serif;
 }
+.item {
+    border-width: 2px;
+    border-color: hotpink;
+    display: inline;}
 
     a:hover {
         color:slateblue; }
