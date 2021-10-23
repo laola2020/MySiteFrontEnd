@@ -11,7 +11,7 @@
 .header { grid-area: header; }
 .menu { grid-area: menu; }
 .main { grid-area: main; }
-.footer { grid-area: right; }
+.footer { grid-area: footer; }
 
 .grid-container {
     display: grid;
@@ -24,7 +24,7 @@
     padding: 10px;
   }
 
-}
+
 @media only screen and (max-width: 570px) {
     .grid-container {
         display: grid;
