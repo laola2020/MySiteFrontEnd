@@ -22,7 +22,16 @@ esto es un comentario
 /*
 .col-3 header {position: sticky;}
 .col-9 menu {position: sticky;}*/
-
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
   
 .header{
     position: sticky;
@@ -34,9 +43,7 @@ esto es un comentario
     font-size:18px;
     font-family: 'Nunito', sans-serif;
     text-align: left;
-    
 }
-
 
 .menu{
     position: sticky;
@@ -73,17 +80,26 @@ input[required]{
     border-width: 2px;
     border-color: hotpink;
     display: inline;}
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      
-      [class*="col-"] {
-        float: left;
-        padding: 15px;
-      }
-      
+
+ a:hover {
+        color:slateblue; }
+        a:active{
+            background-color:slateblue; ;color:white;
+        }
+
+ img {opacity: 1;
+            max-width: 100%;
+            height: auto;
+            position: top;
+    }  
+
+.item img:hover
+{
+    opacity: 0.2;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
       .col-1 {width: 8.33%;}
       .col-2 {width: 16.66%;}
       .col-3 {width: 25%;}
@@ -107,23 +123,14 @@ input[required]{
             [class*="col-"] {
               width: 100%;
             }
-    a:hover {
-        color:slateblue; }
-        a:active{
-            background-color:slateblue; ;color:white;
-        }
+
 /*table {position: relative;}
 td {padding-top: 15px;
     margin-bottom: 20px;
     border-style: dotted;
     
     }*/
-img {opacity: 1;
-        max-width: 100%;
-        height: auto;
-        position: top; 
-    
-}
+
     /*animation-name: changeOpacity;
     animation-duration: 2s;
 }
@@ -134,13 +141,6 @@ img {opacity: 1;
 
 
 
-
-.item img:hover
-{
-    opacity: 0.2;
-transition-duration: 1s;
-transition-timing-function: ease-out;
-}
 
 /*header {
     display: none;
