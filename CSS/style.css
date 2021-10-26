@@ -1,11 +1,6 @@
 /*
 esto es un comentario
 */ 
-
-   
-
-
-
 * {
     box-sizing: border-box;
   }/*
@@ -32,19 +27,173 @@ esto es un comentario
     float: left;
     padding: 15px;
 }
-  
+  .grid-container {
+    display: grid;
+    background-color: chartreuse;
+    border-style: double;
+    
+  }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 .header{
+  background-color: white;
     position: sticky;
     border-style: dotted;
     padding:15px;
     top:0%;
     color:black;
-    background-color: white;
     font-size:18px;
     font-family: 'Nunito', sans-serif;
     text-align: left;
+    z-index: 3;
+
+}.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
 
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color:black;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4; color:slateblue; 
+}
+  a:active{
+      background-color:slateblue; ;color:white;
+  }
+/*.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}*/
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 11px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 990px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 0px 6px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+/* Esto no me estaría funcionando
+@media only screen and (max-width: 480px) {
+   [class*="col-"] {
+     width: 100%;
+   }
+   
+   @media only screen and (min-width: 600px) {
+ [class*="col-"] {
+   width: 100%;
+ }*/
+
+
+/*-----------------------------------------------
 .menu{
     position: sticky;
     border-style: dotted;
@@ -54,8 +203,8 @@ esto es un comentario
     background-color: white;
     font-size:18px;
     font-family: 'Nunito', sans-serif;
-    text-align: right;
-}
+    text-align: right;*/
+
 .main
 {   position:static;
     border-style: dotted;
@@ -63,19 +212,20 @@ esto es un comentario
     font-size:  15px;
     font-family: 'Nunito Sans', sans-serif;}
 
-input[required]{
+.footer
+{
+      position: relative;
+      border-style: dotted;
+      bottom:0%;
+      background-color:rgb(42, 22, 97);
+      color:white;
+      font-size:15px;
+      font-family: 'Nunito', sans-serif;
+  }
+/*input[required]{
     background-color: rgb(219, 219, 219);
 }
 
-.footer{
-    position: relative;
-    border-style: dotted;
-    bottom:0%;
-    background-color:rgb(42, 22, 97);
-    color:white;
-    font-size:15px;
-    font-family: 'Nunito', sans-serif;
-}
 .item {
     border-width: 2px;
     border-color: hotpink;
@@ -100,26 +250,14 @@ transition-duration: 1s;
 transition-timing-function: ease-out;
 }
 
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
       
-      @media only screen and (max-width: 847px) {
-        /* For mobile phones: */
+      @media only screen and (min-width: 600px) {
+         For mobile phones:
         [class*="col-"] {
           width: 100%;
         }
         @media only screen and (max-width: 990px) {
-            /* For iPad: */
+            /* For iPad: 
             [class*="col-"] {
               width: 100%;
             }
