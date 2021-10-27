@@ -1,22 +1,13 @@
 /*
 esto es un comentario
 */ 
+/* Apuntes de preguntas: 
+1. Cómo formateo CSS? */
 * {
     box-sizing: border-box;
-  }/*
-  @import url(index.css);
-  
- 
-*{
-    background-color:white;
-    color:black;
-    margin-top: 0px;
-    margin-left: 0px;
-}*/
+  }
 
-/*
-.col-3 header {position: sticky;}
-.col-9 menu {position: sticky;}*/
+ 
 .row::after {
     content: "";
     clear: both;
@@ -29,9 +20,8 @@ esto es un comentario
 }
   .grid-container {
     display: grid;
-    background-color: chartreuse;
+    background-color: chartreuse; /* puse color horrible para ver donde estoy parada mientras escribo el CSS*/
     border-style: double;
-    
   }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -46,48 +36,44 @@ esto es un comentario
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.header{
-  background-color: white;
+    .header{
+    background-color: white; 
     position: sticky;
     border-style: dotted;
     padding:15px;
-    top:0%;
     color:black;
-    font-size:18px;
+    font-size: 18px;
     font-family: 'Nunito', sans-serif;
     text-align: left;
-    z-index: 3;
-
-}.header ul {
+    z-index: 3; /* para qué sirve? */
+} 
+/*}*/.header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
   background-color: #fff;
 }
-
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding:10px 10px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
-  color:black;
 }
-
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4; color:slateblue; 
+  background-color:#f4f4f4; color:slateblue; 
 }
   a:active{
-      background-color:slateblue; ;color:white;
+      background-color:slateblue; color:white;
   }
-/*.header .logo {
+  .header .logo {
   display: block;
   float: left;
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
-}*/
+}
 
 /* menu */
 
@@ -103,18 +89,18 @@ esto es un comentario
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 11px 20px;
+  padding: 15px 20px;
   position: relative;
   user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: rgb(32, 30, 30);
+  background:#333;
   display: block;
   height: 2px;
   position: relative;
-  transition: .2s ease-out;
-  width: 25px;
+  transition: background .2s ease-out; /* Por qué está en rojo?*/
+  width: 18px;
 }
 
 .header .menu-icon .navicon:before,
@@ -163,6 +149,50 @@ esto es un comentario
   top: 0;
 }
 
+img {opacity: 1;
+      max-width: 100%;
+      height: auto;
+      position: top;
+} 
+.item img:hover
+{opacity: 0.2;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
+iframe {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  position: top;
+}  
+
+.main
+{   position:relative;
+    border-style: dotted;
+    color:black;
+    font-size:  15px;
+    font-family: 'Nunito Sans', sans-serif;}
+
+img {opacity: 1;
+      max-width: 100%;
+      height: auto;
+      position: top;
+}  
+
+.item img:hover
+{opacity: 0.2;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
+iframe {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  position: top;
+
+}  
 
 .main
 {   position:relative;
@@ -171,57 +201,6 @@ esto es un comentario
     color:black;
     font-size:  15px;
     font-family: 'Nunito Sans', sans-serif;}
-
-img {opacity: 1;
-      max-width: 100%;
-      height: auto;
-      position: top;
-}  
-
-.item img:hover
-{opacity: 0.2;
-transition-duration: 1s;
-transition-timing-function: ease-out;
-}
-
-iframe {
-  align-items: center;
-  max-width: 100%;
-  height: auto;
-  position: top;
-
-}  
-
-
-.footer
-{
-.main
-{   position:relative;
-    border-style: dotted;
-    color:black;
-    font-size:  15px;
-    font-family: 'Nunito Sans', sans-serif;}
-
-img {opacity: 1;
-      max-width: 100%;
-      height: auto;
-      position: top;
-}  
-
-.item img:hover
-{opacity: 0.2;
-transition-duration: 1s;
-transition-timing-function: ease-out;
-}
-
-iframe {
-  align-items: center;
-  max-width: 100%;
-  height: auto;
-  position: top;
-
-}  
-
 
 .footer
 {padding: 15px;
@@ -233,22 +212,20 @@ iframe {
       font-size:15px;
       font-family: 'Nunito', sans-serif;
   }
-      position: relative;
-      border-style: dotted;
-      bottom:0%;
-      background-color:rgb(42, 22, 97);
-      color:white;
-      font-size:15px;
-      font-family: 'Nunito', sans-serif;
-  }
-/* 48em = 768px */
 
+  /* tengo que poner el media query abajo proque si no me cambia el estilo de las etiquetas main y foter y se rompe todo-
+  -Aún así no responde el media query para mobile
+  -No despliega menú el botón hamburguesa*/
+
+  
+/* 48em = 768px */
 @media (min-width: 990px) {
   .header li {
     float: left;
+    color:white;
   }
   .header li a {
-    padding:0px 6px;
+    padding: 0px 6px;
   }
   .header .menu {
     clear: none;
@@ -256,19 +233,18 @@ iframe {
     max-height: none;
   }
   .header .menu-icon {
-    display: none;
+    display:none;
+  }
+
+@media only screen and (max-width: 480px) {
+  [class*="col-"] {
+    width: 100%;
   }
 
 
-@media only screen and (max-width: 480px) {
-   [class*="col-"] {
-     width: 100%;
-   }
+
+
    
-   @media only screen and (min-width: 600px) {
- [class*="col-"] {
-   width: 100%;
- }
 
 
 /*-----------------------------------------------
