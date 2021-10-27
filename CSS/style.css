@@ -212,6 +212,27 @@ esto es un comentario
     font-size:  15px;
     font-family: 'Nunito Sans', sans-serif;}
 
+img {opacity: 1;
+      max-width: 100%;
+      height: auto;
+      position: top;
+}  
+
+.item img:hover
+{opacity: 0.2;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
+iframe {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  position: top;
+
+}  
+
+
 .footer
 {
       position: relative;
