@@ -109,12 +109,12 @@ esto es un comentario
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: rgb(32, 30, 30);
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
+  transition: .2s ease-out;
+  width: 25px;
 }
 
 .header .menu-icon .navicon:before,
@@ -163,50 +163,9 @@ esto es un comentario
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 990px) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 0px 6px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-
-/* Esto no me estaría funcionando
-@media only screen and (max-width: 480px) {
-   [class*="col-"] {
-     width: 100%;
-   }
-   
-   @media only screen and (min-width: 600px) {
- [class*="col-"] {
-   width: 100%;
- }*/
-
-
-/*-----------------------------------------------
-.menu{
-    position: sticky;
-    border-style: dotted;
-    padding:15px;
-    top:0%;
-    color:black;
-    background-color: white;
-    font-size:18px;
-    font-family: 'Nunito', sans-serif;
-    text-align: right;*/
 
 .main
-{   position:static;
+{   position:relative;
     border-style: dotted;
     color:black;
     font-size:  15px;
@@ -243,6 +202,48 @@ iframe {
       font-size:15px;
       font-family: 'Nunito', sans-serif;
   }
+/* 48em = 768px */
+
+@media (min-width: 990px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding:0px 6px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+
+@media only screen and (max-width: 480px) {
+   [class*="col-"] {
+     width: 100%;
+   }
+   
+   @media only screen and (min-width: 600px) {
+ [class*="col-"] {
+   width: 100%;
+ }
+
+
+/*-----------------------------------------------
+.menu{
+    position: sticky;
+    border-style: dotted;
+    padding:15px;
+    top:0%;
+    color:black;
+    background-color: white;
+    font-size:18px;
+    font-family: 'Nunito', sans-serif;
+    text-align: right;*/
+
 /*input[required]{
     background-color: rgb(219, 219, 219);
 }
