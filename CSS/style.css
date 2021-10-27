@@ -167,6 +167,7 @@ esto es un comentario
 .main
 {   position:relative;
     border-style: dotted;
+    padding: 15px;
     color:black;
     font-size:  15px;
     font-family: 'Nunito Sans', sans-serif;}
@@ -194,6 +195,44 @@ iframe {
 
 .footer
 {
+.main
+{   position:relative;
+    border-style: dotted;
+    color:black;
+    font-size:  15px;
+    font-family: 'Nunito Sans', sans-serif;}
+
+img {opacity: 1;
+      max-width: 100%;
+      height: auto;
+      position: top;
+}  
+
+.item img:hover
+{opacity: 0.2;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
+iframe {
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  position: top;
+
+}  
+
+
+.footer
+{padding: 15px;
+      position: relative;
+      border-style: dotted;
+      bottom:0%;
+      background-color:rgb(42, 22, 97);
+      color:white;
+      font-size:15px;
+      font-family: 'Nunito', sans-serif;
+  }
       position: relative;
       border-style: dotted;
       bottom:0%;
