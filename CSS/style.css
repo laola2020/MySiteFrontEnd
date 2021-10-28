@@ -96,7 +96,9 @@ esto es un comentario
   position: relative;
   user-select: none;
 }
-
+.header .menu-icon:active{
+  background-color:slateblue;
+}
 .header .menu-icon .navicon {
   background:#333;
   display: block;
