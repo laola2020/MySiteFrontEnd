@@ -61,6 +61,8 @@ esto es un comentario
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
+
+
 .header li a:hover,
 .header .menu-btn:hover {
   background-color:#f4f4f4; color:slateblue; 
@@ -100,7 +102,7 @@ esto es un comentario
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out; /* Por qué está en rojo?*/
+  transition: .2s ease-out; /* Por qué está en rojo?*/
   width: 18px;
 }
 
@@ -115,6 +117,7 @@ esto es un comentario
   width: 100%;
 }
 
+
 .header .menu-icon .navicon:before {
   top: 5px;
 }
@@ -122,6 +125,7 @@ esto es un comentario
 .header .menu-icon .navicon:after {
   top: -5px;
 }
+
 
 /* menu btn */
 
@@ -149,7 +153,6 @@ esto es un comentario
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
 
 .main
 {   position:relative;
@@ -185,8 +188,6 @@ iframe {
   position: top;
 
 }  
-
-
 .footer
 {padding: 15px;
       position: relative;
@@ -204,6 +205,7 @@ iframe {
 
   
 /* 48em = 768px */
+
 @media (min-width: 990px) {
   .header li {
     float: left;
@@ -217,9 +219,10 @@ iframe {
     float: right;
     max-height: none;
   }
-  .header .menu-icon {
+ .header .menu-icon {
     display:none;
   }
+  
 
 @media only screen and (max-width: 480px) {
   [class*="col-"] {
