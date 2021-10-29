@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/56f36b595b.js" crossorigin="anonymous"></script>
     <title>Laura Olalde-Develop</title>
 
@@ -22,160 +23,162 @@
     -->
 
 <body>
-    <div class="grid-container">
+
+    <div class="topnav" id="myTopnav">
         <header class="header">
-            <div class="col-3 header">
-                <div class="item">
-                    LAURA OLALDE
-                </div>
+            <a href="#home">LAURA OLALDE</a>
+            <a href="pages/Acerca de.html">Acerca de</a>
+            <a href="pages/Obras.html">Obras</a>
+            <a href="pages/Noticias.html">Noticias</a>
+            <a href="pages/Taller.html">Taller</a>
+            <a href="pages/Experiencia.html">Experiencia</a>
+            <a href="pages/Archivos.html">Archivos</a>
+            <a href="pages/Contacto.html">Contacto</a>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+    </div>
+    </ul>
+    </div>
+    </header>
+    <main class="main">
+        <img src="../Assets/images/slide1 copy.jpg" width="100%">
+        <h3><b>Últimas noticias</b></h3>
+
+        <div class="col-3 main">
+            <div class="item">
+                <a
+                    href="https://medium.com/@goshcommunity/gosh-community-member-profiles-documentation-is-the-link-for-the-next-generation-1d91914d4a53"><img
+                        src="../Assets/images/GOSH-community-profile.png" width="100%">
+                </a>
+
+                <h3>Perfil de Laura Olalde, una artista visual argentina que fusiona ciencia, arte y
+                    tecnología
+                </h3>
+                <p> Este es el primer post de una serie de
+                    perfiles sobre los miembros de la comunidad de GOSH que forma parte de la Guía de
+                    Eventos de
+                    la
+                    Comunidad de GOSH.<br>
+                    <small>Por Marcela Basch, periodista independiente, Argentina.</small>
+                </p>
             </div>
-            <div class="row">
-                <div class="col-9 header">
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                    <ul class="menu">
-                        <li><a href="pages/Acerca de.html">Acerca de</a></li>
-                        <li><a href="pages/Obras.html">Obras</a></li>
-                        <li><a href="pages/Noticias.html">Noticias</a></li>
-                        <li><a href="pages/Taller.html">Taller</a></li>
-                        <li><a href="pages/Experiencia.html">Experiencia</a></li>
-                        <li><a href="pages/Archivos.html">Archivos</a></li>
-                        <li><a href="pages/Contacto.html">Contacto</a></li>
-                        <li><i class="fab fa-facebook"></i></li>
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                    </ul>
-                </div>
-        </header>
-        <main class="main">
-            <img src="../Assets/images/slide1 copy.jpg" width="100%">
-            <h3><b>Últimas noticias</b></h3>
+        </div>
+        <div class="col-3 main">
+            <div class="item">
+                <iframe width="100%" loading="lazy" src="https://www.youtube.com/embed/RJsjM2GEykE" frameborder="0"
+                    allowfullscreen="allowfullscreen"></iframe>
 
-            <div class="row">
+                <h3>Laura Olalde, bioarte y conciencia de los sistemas complejos
+                </h3>
+                <p> El segundo encuentro del ciclo <b>Mañanas de bioarte</b> tuvo como protagonista a Laura
+                    Olalde
+                    en charla
+                    con Lucía Stubrin, Directora del proyecto de investigación "Biosemiótica, Arte y Técnica"
+                    que organiza esta actividad de la
+                    Facultad de Ciencias de la Educación de la Universidad Nacional de Entre Ríos.
+                </p>
+            </div>
+        </div>
 
-                <div class="col-3 main">
-                    <div class="item">
-                        <a
-                            href="https://medium.com/@goshcommunity/gosh-community-member-profiles-documentation-is-the-link-for-the-next-generation-1d91914d4a53"><img
-                                src="../Assets/images/GOSH-community-profile.png" width="100%">
-                        </a>
+        <div class="col-3 main">
+            <div class="item">
 
-                        <h3>Perfil de Laura Olalde, una artista visual argentina que fusiona ciencia, arte y
-                            tecnología
-                        </h3>
-                        <p> Este es el primer post de una serie de
-                            perfiles sobre los miembros de la comunidad de GOSH que forma parte de la Guía de
-                            Eventos de
-                            la
-                            Comunidad de GOSH.<br>
-                            <small>Por Marcela Basch, periodista independiente, Argentina.</small>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-3 main">
-                    <div class="item">
-                        <iframe width="100%" loading="lazy" src="https://www.youtube.com/embed/RJsjM2GEykE"
-                            frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-                        <h3>Laura Olalde, bioarte y conciencia de los sistemas complejos
-                        </h3>
-                        <p> El segundo encuentro del ciclo <b>Mañanas de bioarte</b> tuvo como protagonista a Laura
-                            Olalde
-                            en charla
-                            con Lucía Stubrin, Directora del proyecto de investigación "Biosemiótica, Arte y Técnica"
-                            que organiza esta actividad de la
-                            Facultad de Ciencias de la Educación de la Universidad Nacional de Entre Ríos.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-3 main">
-                    <div class="item">
-
-                        <!--Problemas para cargar videos desde youtube "La página www.youtube.com ha rechazado la conexión."/ solucion que encontré en 
+                <!--Problemas para cargar videos desde youtube "La página www.youtube.com ha rechazado la conexión."/ solucion que encontré en 
                             <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload"
                             src="blob:https://www.youtube.com/252d95e4-e07d-4e9d-91b8-153aeb180d49"
                             style="width: 559px; height: 314px; left: 0px; top: 0px;"></video>
                         Intenté adaptar el siguiente de la misma manera ... pero no salíó    
                         <iframe width="100%" src="https://www.youtube.com/252d95e4-e07d-4e9d-91b8-153aeb180d49"
                             frameborder="0" allowfullscreen="allowfullscreen"></iframe>-->
-                        <iframe width="100%" loading="lazy" src="https://www.youtube.com/embed/RJsjM2GEykE"
-                            frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <iframe width="100%" loading="lazy" src="https://www.youtube.com/embed/RJsjM2GEykE" frameborder="0"
+                    allowfullscreen="allowfullscreen"></iframe>
 
-                        <h3>Perfil de Laura Olalde, una artista visual argentina que fusiona ciencia, arte y
-                            tecnología
-                        </h3>
-                        <p> Este es el primer post de una serie de
-                            perfiles sobre los miembros de la comunidad de GOSH que forma parte de la Guía de
-                            Eventos de
-                            la
-                            Comunidad de GOSH.
-                            <small>Por Marcela Basch, periodista independiente, Argentina.</small>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-3 main">
-                    <div class="item">
-                        <a
-                            href="https://medium.com/@goshcommunity/gosh-community-member-profiles-documentation-is-the-link-for-the-next-generation-1d91914d4a53"><img
-                                src="../Assets/images/GOSH-community-profile.png" width="100%">
-                        </a>
+                <h3>Perfil de Laura Olalde, una artista visual argentina que fusiona ciencia, arte y
+                    tecnología
+                </h3>
+                <p> Este es el primer post de una serie de
+                    perfiles sobre los miembros de la comunidad de GOSH que forma parte de la Guía de
+                    Eventos de
+                    la
+                    Comunidad de GOSH.
+                    <small>Por Marcela Basch, periodista independiente, Argentina.</small>
+                </p>
+            </div>
+        </div>
+        <div class="col-3 main">
+            <div class="item">
+                <a
+                    href="https://medium.com/@goshcommunity/gosh-community-member-profiles-documentation-is-the-link-for-the-next-generation-1d91914d4a53"><img
+                        src="../Assets/images/GOSH-community-profile.png" width="100%">
+                </a>
 
-                        <h3>Perfil de Laura Olalde, una artista visual argentina que fusiona ciencia, arte y
-                            tecnología
-                        </h3>
-                        <p> Este es el primer post de una serie de
-                            perfiles sobre los miembros de la comunidad de GOSH que forma parte de la Guía de
-                            Eventos de
-                            la
-                            Comunidad de GOSH.
-                            <small>Por Marcela Basch, periodista independiente, Argentina.</small>
-                        </p>
-                    </div>
+                <h3>Perfil de Laura Olalde, una artista visual argentina que fusiona ciencia, arte y
+                    tecnología
+                </h3>
+                <p> Este es el primer post de una serie de
+                    perfiles sobre los miembros de la comunidad de GOSH que forma parte de la Guía de
+                    Eventos de
+                    la
+                    Comunidad de GOSH.
+                    <small>Por Marcela Basch, periodista independiente, Argentina.</small>
+                </p>
+            </div>
+        </div>
+        <div class="row"></div>
+        <h3><b>Presentaciones</b></h3>
+
+        <div class="col-1 main">
+
+        </div>
+        <div class="col-10 main">
+            <span class="item"><img src="../Assets/images/slide1 copy.jpg" width="25% device-width, initial-scale=1.0">
+            </span>
+            <span class="item"><img src="../Assets/images/slide1 copy.jpg" width="25% device-width, initial-scale=1.0">
+            </span>
+            <span class="item"><img src="../Assets/images/slide1 copy.jpg" width="25% device-width, initial-scale=1.0">
+            </span>
+        </div>
+
+        <div class="col-1 main">
+
+
+        </div>
+        <div class="row"></div>
+        <h3><b>En Foco</b></h3>
+
+
+        <div class="row">
+            <div class="col-4 main">
+                <div class="item"><img src="../Assets/images/slide1 copy.jpg" width="100%, initial-scale=1.0">
                 </div>
             </div>
-
-            <div class="row">
-                <h3><b>Presentaciones</b></h3>
-                <div class="col-1 main">
-                </div>
-
-                <div class="col-10 main">
-                    <span class="item"><img src="../Assets/images/slide1 copy.jpg"
-                            width="25% device-width, initial-scale=1.0">
-                    </span>
-                    <span class="item"><img src="../Assets/images/slide1 copy.jpg"
-                            width="25% device-width, initial-scale=1.0">
-                    </span>
-                    <span class="item"><img src="../Assets/images/slide1 copy.jpg"
-                            width="25% device-width, initial-scale=1.0">
-                    </span>
-                </div>
-
-                <div class="col-1 main">
+            <div class="col-4 main">
+                <div class="item"><img src="../Assets/images/slide1 copy.jpg" width="100%, initial-scale=1.0">
                 </div>
             </div>
-
-            <div clas="row">
-                <h3><b>En Foco</b></h3>
-            </div>
-
-            <div class="row">
+            <div>
                 <div class="col-4 main">
                     <div class="item"><img src="../Assets/images/slide1 copy.jpg" width="100%, initial-scale=1.0">
                     </div>
                 </div>
-                <div class="col-4 main">
-                    <div class="item"><img src="../Assets/images/slide1 copy.jpg" width="100%, initial-scale=1.0">
-                    </div>
-                </div>
-                <div>
-                    <div class="col-4 main">
-                        <div class="item"><img src="../Assets/images/slide1 copy.jpg" width="100%, initial-scale=1.0">
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!--  Variante Main con table
+        </div>
+        <div style="padding-left:16px"></div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <!--  Variante Main con table
                 
                 <table>
                 <tr>
@@ -292,12 +295,12 @@
         <div class="item"><img src="../Assets/images/slide1 copy.jpg" width="25% device-width, initial-scale=1.0">
             </td>
         </div>-->
-            -->
-        </main>
-
-        <footer class="footer">
-            Copyright 2021 Contact
-        </footer>
+    
+    </main>
+    <div class="row"></div>
+    <footer class="footer">
+        Copyright 2021 Contact
+    </footer>
     </div>
     </div>
 </body>
