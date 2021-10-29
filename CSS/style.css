@@ -37,7 +37,75 @@ esto es un comentario
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-    .header{
+.topnav {
+  position: sticky;
+  overflow:hidden;
+  background-color: white;
+  border-style: dotted;
+  color:black;
+  padding:15px;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  text-align: right;
+ /* background-color: white; 
+    position: sticky;
+    border-style: dotted;
+    padding:15px;
+    
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    z-index: 3; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#f4f4f4; color:slateblue; 
+} 
+
+.topnav a.active {
+  background-color:slateblue; color:white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+   /* .header{
     background-color: white; 
     position: sticky;
     border-style: dotted;
@@ -47,8 +115,8 @@ esto es un comentario
     font-family: 'Nunito', sans-serif;
     text-align: left;
     z-index: 3; /* para qué sirve? */
-} 
-/*   }  extraño comportamiento */.header ul {
+
+/*   }  extraño comportamiento *//* .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -70,7 +138,7 @@ esto es un comentario
   a:active{
       background-color:slateblue; color:white;
   }
- /* .header .logo {
+ .header .logo {
   display: block;
   float: left;
   font-size: 2em;
@@ -78,7 +146,7 @@ esto es un comentario
   text-decoration: none;
 }*/
 
-/* menu */
+/* menu 
 
 .header .menu {
   clear: both;
@@ -86,7 +154,7 @@ esto es un comentario
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
+/* menu icon 
 
 .header .menu-icon {
   cursor: pointer;
@@ -104,7 +172,7 @@ esto es un comentario
   display: block;
   height: 2px;
   position: relative;
-  transition: .2s ease-out; /* Por qué está en rojo?*/
+  transition: .2s ease-out; /* Por qué está en rojo?
   width: 18px;
 }
 
@@ -129,7 +197,7 @@ esto es un comentario
 }
 
 
-/* menu btn */
+/* menu btn 
 
 .header .menu-btn {
   display: none;
@@ -154,7 +222,7 @@ esto es un comentario
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
-}
+}*/
 
 .main
 {   position:relative;
@@ -206,7 +274,7 @@ iframe {
   -No despliega menú el botón hamburguesa*/
 
   
-/* 48em = 768px */
+/* 48em = 768px 
 
 @media (min-width: 990px) {
   .header li {
@@ -223,10 +291,10 @@ iframe {
   }
  .header .menu-icon {
     display:none;
-  }
+  }*/
   
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
   }
