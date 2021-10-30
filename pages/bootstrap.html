@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../Assets/ico/Mari_euskal_jainkosa.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/56f36b595b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>LAURA OLALDE</b></a>
+            <!--<a href="../index.html">Volver al menú</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Volver al menú principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Volver a Taller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Documentación</a></li>
+                            <li><a class="dropdown-item" href="#">Repositorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Enlaces de interés</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+
+                </ul>
+                <i class="fab fa-facebook"></i>
+                <!--la idea es hacer responsivos los íconos-->
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-sm container-lg">
+
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                    Bien!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Bien!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Usuario</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor completar este campo
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validationCustom03" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Es necesario que ingrese una contraseña
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validationCustom04" class="form-label">Repetir Contraseña</label>
+                <input type="password" class="form-control" id="validationCustom04" required>
+                <div class="invalid-feedback">
+                    Por favor reingresar la contraseña
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Teléfono de Contacto</label>
+                <input type="number" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Por favor indique un número válido
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <label for="validationCustom06" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationCustom06" required>
+                <div class="invalid-feedback">
+                    Por favor indique un mail válido
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepto términos y condiciones.
+                    </label>
+                    <div class="invalid-feedback">
+                        Debe aceptar los términos y condiciones
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"></div>
+
+            <legend><b>ACERCA DE TÍ:</b></legend><br>
+
+            <label for="areas"><b>Áreas de interés:</b></label><br>
+            <div class="col-md-3">
+                <input type="checkbox" name="opcion" value="1"> Artes Plásticas<br>
+                <input type="checkbox" name="opcion" value="2"> Arte Público y muralismo<br>
+                <input type="checkbox" name="opcion" value="3"> Arte Sonoro<br>
+                <input type="checkbox" name="opcion" value="4"> Artes Visuales<br>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="opcion" value="5"> Bioarte<br>
+                <input type="checkbox" name="opcion" value="6"> Biofabricación<br>
+                <input type="checkbox" name="opcion" value="7"> Ciencia ciudadana<br>
+                <input type="checkbox" name="opcion" value="8"> Ciencia ficción<br>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="opcion" value="9"> Coproducción Sciart<br>
+                <input type="checkbox" name="opcion" value="10"> Diseño de materiales<br>
+                <input type="checkbox" name="opcion" value="11"> Filosofía<br>
+                <input type="checkbox" name="opcion" value="12"> Narrativas especulativas<br>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="opcion" value="13"> Narrativas visuales & storyboards<br>
+                <input type="checkbox" name="opcion" value="14"> Tecnologías abiertas<br>
+                <input type="checkbox" name="opcion" value="15"> Tecnologías aplicadas al Arte<br>
+                <input type="checkbox" name="opcion" value="16"> Tecnologías de la información (TICs)<br><br>
+            </div>
+
+            <label for="Bio"><b>BIO</b> (*máximo 500 caracteres)<br>
+                <textarea name="bio" rows="15" cols="80" maxlength="500">Cuéntanos acerca de tí</textarea><br><br>
+            </label>
+
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">ENVIAR</button>
+                <button class="btn btn-primary" type="reset">RESETEAR</button>
+            </div>
+        </form>
+
+        <!-- <form action="https://www.w3schools.com/action_page.php" method="POST" target="__blanck">
+                <fieldset>
+                    <legend><b>REGISTRO:</b></legend><br>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombreID" name="nombre" required><br><br>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellidoID" name="apellido" required><br><br>
+                    <label for="usuario">Nombre de usuario(*obligatorio):</label><br>
+                    <input type="text" id="usuarioID" name="usuario" maxlength="12" required><br><br>
+                    <label for="email">Correo electrónico (*obligatorio):</label><br>
+                    <input type="email" id="emailID" name="email" required><br><br>
+                    <label for="password">Contraseña(*obligatorio):</label><br>
+                    <input type="password" id="passwordID" name="password" required><br><br>
+                    <label for="rpassword">Repetir contraseña (*obligatorio):</label><br>
+                    <input type="password" id="rpasswordID" name="rpassword" required><br><br>
+               
+            <br><br>
+            <form action="https://www.w3schools.com/action_page.php" method="POST" target="__blanck">
+            <div class="col-md-8">
+                <legend><b>ACERCA DE TÍ:</b></legend><br>
+                <label for="areas"><b>Áreas de interés:</b></label><br>
+                <input type="checkbox" name="opcion" value="1">Artes Plásticas<br>
+                <input type="checkbox" name="opcion" value="2">Arte Público y muralismo<br>
+                <input type="checkbox" name="opcion" value="3">Arte Sonoro<br>
+                <input type="checkbox" name="opcion" value="4">Artes Visuales<br>
+                <input type="checkbox" name="opcion" value="5">Bioarte<br>
+                <input type="checkbox" name="opcion" value="6">Biofabricación<br>
+                <input type="checkbox" name="opcion" value="7">Ciencia ciudadana<br>
+                <input type="checkbox" name="opcion" value="8">Ciencia ficción<br>
+                <input type="checkbox" name="opcion" value="9">Coproducción Sciart<br>
+                <input type="checkbox" name="opcion" value="10">Diseño de materiales<br>
+                <input type="checkbox" name="opcion" value="11">Filosofía<br>
+                <input type="checkbox" name="opcion" value="12">Narrativas especulativas<br>
+                <input type="checkbox" name="opcion" value="13">Narrativas visuales & storyboards<br>
+                <input type="checkbox" name="opcion" value="14">Tecnologías abiertas<br>
+                <input type="checkbox" name="opcion" value="15">Tecnologías aplicadas al Arte<br>
+                <input type="checkbox" name="opcion" value="16">Tecnologías de la información (TICs)<br><br>
+
+
+                <label for="Bio"><b>BIO</b> (*máximo 500 caracteres)<br>
+                    <textarea name="bio" rows="20" cols="60" maxlength="500">Cuéntanos acerca de tí</textarea><br><br>
+
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="RESET">
+
+                    <br><br>
+                </label>-->
+
+
+
+        <div class="row"></div>
+
+
+
+        <footer>
+            Copyright 2021 Contact
+        </footer>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../JS/validation.js"></script>
+    </div>
+</body>
+
+</html>
