@@ -152,7 +152,7 @@ iframe {
 }  
 .footer
 {padding: 15px;
-      position: sticky;
+      position: relative;
       border-style: dotted;
       bottom:0%;
       background-color:rgb(42, 22, 97);
